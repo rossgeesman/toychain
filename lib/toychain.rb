@@ -33,6 +33,10 @@ class Toychain
     last_block['index'] + 1
   end
 
+  def my_new_function
+    return 'stuff'
+  end
+
   def hash_block(block)
     payload = block.to_json
     Digest::SHA256.hexdigest(payload)
